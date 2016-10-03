@@ -1,13 +1,23 @@
-appium-android
+
+docker-appium-android
 ==============
+Setup do appium-server para testes automatizados android usando devices reais
 
-Appium Server setup for automated android testing using real devices
+### PRÉ REQUISITOS
 
-start a container by running:  
+* docker
+
+### BUILD
+build this container by running:  
+
+`docker build .`
+
+### EXECUTE
 
 docker run --privileged -v /dev/bus/usb:/dev/bus/usb -i -p 4723:4723 aluedeke/appium-android:latest  
 
-contains the following software:  
+
+Contém os seguintes pacotes:
 
 ubuntu 14.04  
 openjdk 7  
